@@ -15,7 +15,7 @@ class FuelEffiViewModel {
     var recoverySuggestion: String = ""
     //MARK: Computed Properties
     var fuelEfficiency: FuelEfficiency? {
-        guard let distanceTravelled = Double(providedDistance), distanceTravelled < 0 else {
+        guard let distanceTravelled = Double(providedDistance), distanceTravelled > 0 else {
             recoverySuggestion = "Please provide a number."
             return nil
         }
@@ -37,3 +37,4 @@ class FuelEffiViewModel {
         self.recoverySuggestion = recoverySuggestion
     }
 }
+
