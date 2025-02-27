@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C26BFD452D70AD94009CD4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFD3C2D70AD94009CD4A2 /* Assets.xcassets */; };
+		C26BFD462D70AD94009CD4A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26BFD3E2D70AD94009CD4A2 /* Preview Assets.xcassets */; };
+		C26BFD472D70AD94009CD4A2 /* FuelEfficiency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD3A2D70AD94009CD4A2 /* FuelEfficiency.swift */; };
+		C26BFD482D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD3D2D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift */; };
+		C26BFD492D70AD94009CD4A2 /* FuelEffiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD402D70AD94009CD4A2 /* FuelEffiViewModel.swift */; };
+		C26BFD4A2D70AD94009CD4A2 /* FuelEfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD432D70AD94009CD4A2 /* FuelEfficiencyView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C26BFD222D70AC60009CD4A2 /* FuelEfficiencyCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelEfficiencyCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26BFD3A2D70AD94009CD4A2 /* FuelEfficiency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiency.swift; sourceTree = "<group>"; };
+		C26BFD3C2D70AD94009CD4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C26BFD3D2D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiencyCalculatorApp.swift; sourceTree = "<group>"; };
+		C26BFD3E2D70AD94009CD4A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C26BFD402D70AD94009CD4A2 /* FuelEffiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEffiViewModel.swift; sourceTree = "<group>"; };
+		C26BFD432D70AD94009CD4A2 /* FuelEfficiencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiencyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C26BFD242D70AC60009CD4A2 /* FuelEfficiencyCalculator */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FuelEfficiencyCalculator;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C26BFD1F2D70AC60009CD4A2 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		C26BFD192D70AC60009CD4A2 = {
 			isa = PBXGroup;
 			children = (
-				C26BFD242D70AC60009CD4A2 /* FuelEfficiencyCalculator */,
+				C26BFD442D70AD94009CD4A2 /* FuelEfficiencyCalculator */,
 				C26BFD232D70AC60009CD4A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,51 @@
 				C26BFD222D70AC60009CD4A2 /* FuelEfficiencyCalculator.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C26BFD3B2D70AD94009CD4A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFD3A2D70AD94009CD4A2 /* FuelEfficiency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C26BFD3F2D70AD94009CD4A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFD3C2D70AD94009CD4A2 /* Assets.xcassets */,
+				C26BFD3D2D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift */,
+				C26BFD3E2D70AD94009CD4A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C26BFD412D70AD94009CD4A2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFD402D70AD94009CD4A2 /* FuelEffiViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C26BFD422D70AD94009CD4A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C26BFD442D70AD94009CD4A2 /* FuelEfficiencyCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				C26BFD3B2D70AD94009CD4A2 /* Models */,
+				C26BFD412D70AD94009CD4A2 /* ViewModels */,
+				C26BFD422D70AD94009CD4A2 /* Views */,
+				C26BFD432D70AD94009CD4A2 /* FuelEfficiencyView.swift */,
+				C26BFD3F2D70AD94009CD4A2 /* Preview Content */,
+			);
+			path = FuelEfficiencyCalculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +111,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C26BFD242D70AC60009CD4A2 /* FuelEfficiencyCalculator */,
 			);
 			name = FuelEfficiencyCalculator;
 			packageProductDependencies = (
@@ -109,6 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26BFD452D70AD94009CD4A2 /* Assets.xcassets in Resources */,
+				C26BFD462D70AD94009CD4A2 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26BFD472D70AD94009CD4A2 /* FuelEfficiency.swift in Sources */,
+				C26BFD482D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift in Sources */,
+				C26BFD492D70AD94009CD4A2 /* FuelEffiViewModel.swift in Sources */,
+				C26BFD4A2D70AD94009CD4A2 /* FuelEfficiencyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
