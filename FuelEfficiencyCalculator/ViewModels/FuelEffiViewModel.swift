@@ -10,6 +10,7 @@ import Foundation
 @Observable
 class FuelEffiViewModel {
     //MARK: Stored Properties
+    var resultHistory: [FuelEfficiency] = []
     var providedDistance: String
     var providedFuelUsed: String
     var recoverySuggestion: String = ""
@@ -35,6 +36,11 @@ class FuelEffiViewModel {
         self.providedDistance = providedDistance
         self.providedFuelUsed = providedFuelUsed
         self.recoverySuggestion = recoverySuggestion
+    }
+    func saveResult() {
+        if let fuelEfficiency = self.fuelEfficiency {
+            self.resultHistory.insert(fuelEfficiency, at: 0)
+        }
     }
 }
 

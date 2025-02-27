@@ -19,31 +19,16 @@ struct FuelEfficiencyView: View {
             
             if let fuelEfficiency = viewModel.fuelEfficiency {
                 
-                
-                HStack(alignment: .center) {
-                    HStack(alignment: .top) {
-                        
-                        
-                        
-                        Text("\(fuelEfficiency.distanceTravelled.formatted())")
-                            .font(.system(size: 96))
-                        
-                        
-                        Text("x")
-                            .font(.system(size: 96))
-                        
-                        Text("\(fuelEfficiency.fuelUsed.formatted())")
-                            .font(.system(size: 96))
-                        
-                    }
-                    HStack {
- 
-                        Text("=")
-                            .font(.system(size: 96))
- 
-                        Text("\(fuelEfficiency.result.formatted())")
-                            .font(.system(size: 96))
-                    }
+                VStack(alignment: .center) {
+                    Text("Fuel Used: \(fuelEfficiency.fuelUsed.formatted())")
+                        .font(.system(size: 46))
+                    Spacer()
+                    Text("Distance Travelled: \(fuelEfficiency.distanceTravelled.formatted())")
+                        .font(.system(size: 46))
+                    Spacer()
+                    Text("The Fuel Efficiency is \(fuelEfficiency.result.formatted()) L per 100 km.")
+                        .font(.system(size: 46))
+                    Spacer()
                 }
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
@@ -62,10 +47,10 @@ struct FuelEfficiencyView: View {
             }
             
             // INPUT
-            TextField("Distance Travelled", text: $viewModel.providedDistance)
+            TextField("Fuel Used", text: $viewModel.providedFuelUsed)
                 .textFieldStyle(.roundedBorder)
             
-            TextField("Fuel Used", text: $viewModel.providedFuelUsed)
+            TextField("Distance Travelled", text: $viewModel.providedDistance)
                 .textFieldStyle(.roundedBorder)
  
             // Extra space at bottom
