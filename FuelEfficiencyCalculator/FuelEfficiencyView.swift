@@ -64,13 +64,28 @@ struct FuelEfficiencyView: View {
             TextField("Distance Travelled", text: $viewModel.providedDistance)
                 .textFieldStyle(.roundedBorder)
  
-            // Extra space at bottom
-            Spacer()
+            // Show a title for the history
+            HStack {
+                Text("History")
+                    .bold()
+                Spacer()
+            }
+            .padding(.vertical)
+             
+            // Iterate over the history of results
+            List(viewModel.resultHistory) { priorResult in
+                FuelEfficiencyItemView(fuelEfficiency: priorResult)
+            }
+            .listStyle(.plain)
+
         }
         .padding()
+        .navigationTitle("Fuel Efficiency")
     }
 }
 
 #Preview {
-    FuelEfficiencyView()
+    NavigationStack {
+        FuelEfficiencyView()
+    }
 }

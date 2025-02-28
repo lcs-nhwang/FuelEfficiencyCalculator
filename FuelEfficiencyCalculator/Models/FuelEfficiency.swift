@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct FuelEfficiency {
+struct FuelEfficiency: Identifiable {
     //MARK: Stored Properties
+    let id = UUID()
     var distanceTravelled: Double
     var fuelUsed: Double
     //MARK: COmputed Properties

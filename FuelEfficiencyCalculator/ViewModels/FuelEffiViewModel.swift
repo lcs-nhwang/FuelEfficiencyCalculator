@@ -20,7 +20,7 @@ class FuelEffiViewModel {
             recoverySuggestion = "Please provide a number."
             return nil
         }
-        guard let fuelUsed = Double(providedFuelUsed) else {
+        guard let fuelUsed = Double(providedFuelUsed), fuelUsed >= 0 else {
             recoverySuggestion = "Please provide a number."
             return nil
         }

@@ -13,6 +13,7 @@
 		C26BFD482D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD3D2D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift */; };
 		C26BFD492D70AD94009CD4A2 /* FuelEffiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD402D70AD94009CD4A2 /* FuelEffiViewModel.swift */; };
 		C26BFD4A2D70AD94009CD4A2 /* FuelEfficiencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD432D70AD94009CD4A2 /* FuelEfficiencyView.swift */; };
+		C26BFD4E2D70B5E3009CD4A2 /* FuelEfficiencyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26BFD4D2D70B5E3009CD4A2 /* FuelEfficiencyItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C26BFD3E2D70AD94009CD4A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C26BFD402D70AD94009CD4A2 /* FuelEffiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEffiViewModel.swift; sourceTree = "<group>"; };
 		C26BFD432D70AD94009CD4A2 /* FuelEfficiencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiencyView.swift; sourceTree = "<group>"; };
+		C26BFD4D2D70B5E3009CD4A2 /* FuelEfficiencyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEfficiencyItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				C26BFD412D70AD94009CD4A2 /* ViewModels */,
 				C26BFD422D70AD94009CD4A2 /* Views */,
 				C26BFD432D70AD94009CD4A2 /* FuelEfficiencyView.swift */,
+				C26BFD4D2D70B5E3009CD4A2 /* FuelEfficiencyItemView.swift */,
 				C26BFD3F2D70AD94009CD4A2 /* Preview Content */,
 			);
 			path = FuelEfficiencyCalculator;
@@ -174,6 +177,7 @@
 				C26BFD482D70AD94009CD4A2 /* FuelEfficiencyCalculatorApp.swift in Sources */,
 				C26BFD492D70AD94009CD4A2 /* FuelEffiViewModel.swift in Sources */,
 				C26BFD4A2D70AD94009CD4A2 /* FuelEfficiencyView.swift in Sources */,
+				C26BFD4E2D70B5E3009CD4A2 /* FuelEfficiencyItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
